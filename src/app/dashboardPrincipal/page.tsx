@@ -140,13 +140,14 @@ function AppSidebar() {
               <SidebarMenu>
                 {group.items.map((item) => {
                   // Hide admin-only items for non-admin users
-                  if (item.adminOnly && userRole !== "Administrador General") {
+                  if ("adminOnly" in item && item.adminOnly && userRole !== "Administrador General") {
                     return null
                   }
 
                   return (
                     <SidebarMenuItem key={item.title}>
-                      <SidebarMenuButton asChild isActive={item.active}>
+                      {/* <SidebarMenuButton asChild isActive={item.active}> */}
+                      <SidebarMenuButton asChild isActive={"active" in item ? item.active : false}>
                         <a href={item.url}>
                           <item.icon />
                           <span>{item.title}</span>
