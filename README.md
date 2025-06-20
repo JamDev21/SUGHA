@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💧 SUGHA – Sistema Unificado de Gestión Hídrica Adaptable
 
-## Getting Started
+**SUGHA** es una plataforma digital desarrollada para el **control, administración y automatización del recurso hídrico**, enfocada en la mejora del suministro de agua potable en comunidades, localidades o municipios.
 
-First, run the development server:
+Este sistema permite gestionar pagos, usuarios, recibos, morosidad, y además incorpora **monitoreo inteligente de la calidad del agua** a través de sensores. En caso de detectar mala calidad, **el sistema puede cerrar automáticamente válvulas de suministro** para evitar riesgos sanitarios.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌟 Características principales
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📊 Gestión hídrica integral
+- Administración de usuarios, roles y comunidades
+- Control de pagos, generación de recibos y seguimiento de morosos
+- Historiales de consumo por usuario y por zona
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🌐 Monitoreo de calidad del agua
+- Integración con sensores (pH, turbidez, temperatura, etc.)
+- Visualización en tiempo real mediante gráficas interactivas
+- Alertas automáticas cuando los parámetros están fuera de rango
+- Cierre automático de válvulas en caso de riesgo sanitario
 
-## Learn More
+### 🤖 Inteligencia artificial y análisis predictivo (en desarrollo, por el momento esta simulado)
+- **Generación de sugerencias** automáticas según las lecturas de los sensores
+- **Predicciones de calidad del agua** usando modelos de aprendizaje y análisis de tendencias
+- Prevención de riesgos a partir de **patrones históricos detectados**
+- Recomendaciones de acciones correctivas o preventivas (ej. limpieza, revisión de infraestructura)
 
-To learn more about Next.js, take a look at the following resources:
+> 💡 Por ejemplo: si el sistema detecta que la turbidez ha ido en aumento durante varios días, puede sugerir una revisión de los filtros del pozo o activar una alerta al administrador.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧰 Tecnologías utilizadas
 
-## Deploy on Vercel
+| Tecnología | Descripción |
+|------------|-------------|
+| **React** + **TypeScript** | Interfaz moderna y segura |
+| **Tailwind CSS** + **ShadCN** | Componentes de diseño consistentes y responsivos |
+| **Node.js** | Lógica de servidor y API REST |
+| **Sensores IoT** | Recolección de datos en tiempo real |
+| **IA/ML (futurol)** | Predicciones y análisis de datos históricos |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Este sistema forma parte de un proyecto escolar, por lo cual aún está en desarrollo, pero ya hay **3** módulos totalmente funcionales. A continuación, en la imagen se especifica cuáles son:
+![modulos funcionales](./assets/ss/Modulos%20Funcionales.png)
